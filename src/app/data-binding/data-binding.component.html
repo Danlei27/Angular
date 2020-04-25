@@ -1,0 +1,11 @@
+<h1>data-binding works! rota </h1>
+
+<input type="text" (input)="this.numero = $event.target.value"/>input
+<h1>{{ numero }}</h1><!-- exibir  o valor conforme for digitando -->
+<input type="text" (change)="this.numero = $event.target.value"/>change
+<h1>{{ numero }}</h1><!-- espera um ação para ser exibido o valor -->
+<input type="text" (blur)="this.numero = $event.target.value"/>blur
+<h1>{{ numero }}</h1><!-- um evento ao sair do input -->
+
+<input type="text" (input)="obtemNumero($event.target.value)"/>concatenar com  200<!-- pegando pelo um metodo -->
+<h1>{{ numero }}</h1>

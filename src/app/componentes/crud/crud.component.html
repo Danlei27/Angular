@@ -1,0 +1,4 @@
+<div *ngFor="let i of images"><!-- assim estaremos consumindo um serviço de uma api -->
+    <h1>{{ i.title }}</h1>
+    <img [attr.src]="i.url" />
+</div>
